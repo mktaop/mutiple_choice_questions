@@ -14,7 +14,7 @@ import google.generativeai as genai
 
 def get_question():
     model=genai.GenerativeModel('gemini-pro')
-    response = model.generate_content("Generate a random STEM related question for a 9 year old, provide four multiple choices for teh correct answer.  provid which is the correct answer separately and an explanation for the correct answer.  provide the response as a json containing question, choices, correct_answer, explanation.",
+    response = model.generate_content("YOUR PROMOT...MAKE SURE TO ASK FOR A JSON WITH THE QUESTION, CHOICES, CORRECT_ANSWER, AND EXPLANATION",
                                       generation_config=genai.types.GenerationConfig(temperature=0.5))
     data = json.loads(response.text)
     return data
