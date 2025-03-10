@@ -1,3 +1,5 @@
+# pip install the below updated google genai module !! Also, you may need to pip install pydantic if you haven't done that already.
+#pip install google-genai
 
 import streamlit as st
 import os
